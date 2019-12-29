@@ -14,7 +14,7 @@ DDSP minimal template in pytorch
 
 ## Samples
 
-The results is not satisfactory for lack of training data and data cleansing. 
+Current results are not satisfactory enough for lack of training data and data cleansing. But it did sound like violin :rofl:.
 
 ![](assets/22100_rec.png)
 * [audio samples](assets)
