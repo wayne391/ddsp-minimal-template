@@ -1,7 +1,7 @@
 DDSP minimal template in pytorch
 ---
 
-* **Warning: this repo is not officail implementation**  
+* **Warning: this repo is not the officail implementation**  
 * **Modified from [acids-ircam/ddsp_pytorch](https://github.com/acids-ircam/ddsp_pytorch)**
 
 ---
@@ -13,5 +13,8 @@ DDSP minimal template in pytorch
 
 
 ## Samples
-![](assets/22100_rec.png) 
-![](assets/22100_rec.wav) 
+
+The results is not satisfactory for lack of training data and data cleansing. 
+
+![](assets/22100_rec.png)
+* [audio samples](assets)
