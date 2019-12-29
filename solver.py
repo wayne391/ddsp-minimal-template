@@ -47,7 +47,7 @@ def train(args, model, loss_func, dataset):
     dataloader = DataLoader(
         dataset, 
         batch_size=args.batch_size,
-        pin_memory=True,
+        num_workers=8,
         shuffle=True)  
 
     # optimizer
@@ -72,6 +72,7 @@ def train(args, model, loss_func, dataset):
             x = batch['audio']
             f0 = batch['f0']
             loud = batch['lo']
+            x, f0, loud = [it.to(args.device, non_blocking=True) for it in [x, f0, loud]]
             conditions = (f0.transpose(1, 2), loud.transpose(1, 2))
             
             # forward

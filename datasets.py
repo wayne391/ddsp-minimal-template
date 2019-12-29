@@ -92,9 +92,9 @@ class AudioEffectDataset(Dataset):
 
     def __getitem__(self, index):
         result = {
-            'audio': torch.from_numpy(self.list_y[index]).float().unsqueeze(0).to(self.device, non_blocking=True),
-            'f0': torch.from_numpy(self.list_f0[index]).float().unsqueeze(0).to(self.device, non_blocking=True),
-            'lo': torch.from_numpy(self.list_lo[index]).float().unsqueeze(0).to(self.device, non_blocking=True)
+            'audio': torch.from_numpy(self.list_y[index]).float().unsqueeze(0),
+            'f0': torch.from_numpy(self.list_f0[index]).float().unsqueeze(0),
+            'lo': torch.from_numpy(self.list_lo[index]).float().unsqueeze(0)
         }
         return result
 
