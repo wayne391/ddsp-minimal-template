@@ -9,7 +9,7 @@ DDSP minimal template in pytorch
 
 ## Progress
 * AE Model
-* my own coding style for quick realizing my thoughts
+* my own coding style for quickly realizing my thoughts 
 * violin (crawled from MusicNet)
 
 
